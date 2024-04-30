@@ -26,7 +26,7 @@ h1, h4 {
     padding:0;
 }
 h4 {
-    color:cornflowerblue;
+    color:#006EB6;
     border-bottom: 1px solid lightgray;
     font-size: .75rem;
     margin-bottom: 30px;
@@ -44,4 +44,12 @@ img {
 li {
     text-align: left;
     padding:5px;
+}
+.dark {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border-color: white;
+}
+.dark h4 {
+    color: rgb(176, 204, 255);
 }
