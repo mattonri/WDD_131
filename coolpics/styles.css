@@ -15,44 +15,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.viewer {
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    position: fixed;
-    display: grid;
-    padding: 100px 30px;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 1fr 60px;
-    z-index: 3;
-}
-.close-viewer {
-    border: none;
-    background-color: transparent;
-    font-size: 1.6em;
-    color: white;
-    margin-right: 0;
-    height: 60px;
-    width: 60px;
-    grid-column: 2;
-    grid-row: 1;
-
-}
-.viewer img {
-    border: none;
-    grid-column: span 2;
-    grid-row: 2;
-    display: flex;
-    max-height: 100%;
-    width: auto;
-    height: 70vh;
-    object-fit: contain;
-    margin: 30px auto;
-    box-shadow: none;
-}
 a {
     color:inherit;
 }
@@ -70,11 +32,11 @@ h1 {
     background-color: var(--primary-color);
     color: var(--text-light);
     text-align: center;
-    padding-bottom: 15px;
 }
 .nav-bar * {
-    display:block;
-    padding: 5px
+    /* display:block; */
+    padding: 15px;
+    margin: auto;
 }
 .nav-bar h1 {
     font-size: 3em;
