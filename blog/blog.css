@@ -18,7 +18,7 @@
 }
 body {
     font-family: var(--paragraph-font);
-    font-size: 1.2em;
+    font-size: .9em;
     color: var(--text-dark);
     margin: 0;
     padding: 0;
@@ -122,10 +122,10 @@ main {
 
 }
 article {
-    padding: 15px;
+    padding: 10px;
     border:var(--green-dark) 5px solid;
     background-color: var(--white);
-    margin: 15px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -136,8 +136,8 @@ article {
     gap: 10px;
 }
 article * {
-    padding: 15px;
-    margin: 15px;
+    padding: 10px;
+    margin: 10px;
 }
 
 article h2 {
@@ -163,6 +163,8 @@ article .book-reviews {
     grid-area: reviews;
     grid-column: 1 / -1;
     text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .hidden {
@@ -171,7 +173,7 @@ article .book-reviews {
 footer {
     background-color: var(--green-dark);
     color: var(--text-light);
-    padding: 25px 50px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-around;
 }
