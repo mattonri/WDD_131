@@ -36,6 +36,16 @@ a:hover{
 button:hover{
     color: var(--ternary-color)
 }
+.skiptocontent a {
+    position: absolute;
+    background-color: var(--black);
+    color:var(--white);
+    top: -101px;
+    width: 100px;
+}
+.skiptocontent a:focus {
+    top: 0px;
+}
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
 }
