@@ -1,0 +1,110 @@
+:root {
+    --black: #1F1F1C;
+    --white: #f0f0f0;
+    --brown: #B39C4D;
+
+    --grey: #e0e0e0;
+    --secondary-color: #768948;
+    --ternary-color: #A0C280;
+    --accent-color: #B39C4D;
+
+    --text-dark: #1F1F1C;
+    --text-light: #E8EEF2;
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Open Sans', Helvetica, sans-serif;
+}
+body {
+    font-family: var(--paragraph-font);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: right;
+    padding:50px
+}
+#credit-card-form {
+}
+#credit-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#card-front, #card-back {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#card-front {
+    z-index: 2;
+    height: 200px;
+    width: 300px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 3fr 2fr 2fr;
+}
+
+#card-number-div {
+    grid-column: 1 / 3;
+}
+#card-number-div * {
+    display: block;
+}
+#card-number {
+    width:100%;
+}
+#card-holder{
+    width: 150px;
+}
+#expiration-month, #expiration-year {
+    width: 35px;
+}
+#total {
+
+}
+#card-front #card-icon {
+    margin-left: auto;
+}
+#card-back {
+    height: 200px;
+    width: 300px;
+    z-index: 1;
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#cvv * {
+    display: block;
+}
+#cvv input {
+    width: 55px;
+    margin-left: auto;
+    text-align: right;
+}
+#card-front *, #card-back * {
+    margin: 0;
+}
+#stripe {
+    position: relative;
+    bottom: 135px;
+    left: 84px;
+    width: 500px;
+    height: 50px;
+    background-color: var(--text-dark);
+    display: block;
+}
+
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* text-align: left; */
+}
