@@ -5,6 +5,127 @@
 
     --text-dark: #1F1F1C;
     --text-light: #E8EEF2;
-    --heading-font: 'Poppins', sans-serif;
+    --heading-font: "Playwrite NG Modern", cursive;
     --paragraph-font: 'Open Sans', Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+}
+body {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--grey);
+}
+
+header img {
+    height: 40px;
+    display: inline;
+}
+
+header h1 {
+    display: inline;
+}
+nav {
+    text-align: center;
+    width: 100%;
+}
+.search-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 40px;
+}
+.search-input {
+    padding: 8px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    height: 23px;
+    display: inline;
+    margin-bottom: 15px;
+}
+.search-button {
+display: inline;
+height: 100%;
+width: 100%;
+
+}
+#search-icon{
+    height: 20px;
+}
+main {
+    justify-content: center;
+    padding: 10px 20px;
+}
+article {
+    max-width: 600px;
+    border: 2px solid var(--grey);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+img {
+	max-width: 100%;
+}
+article a {
+    text-decoration: none;
+}
+article img {
+    width: 100%;
+    /* height: auto; */
+}
+.tag {
+    background-color: var(--grey);
+    text-transform: uppercase;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 4px;
+}
+footer {
+    border-top: 1px solid var(--grey);
+    padding: 10px 20px;
+    text-align: center;
+}
+.social a img {
+    height: 40px;
+}
+footer {
+    font-size: .9em;
+}
+
+
+@media (min-width: 960px) {
+    article img {
+        width: 60%;
+        float: left;
+        margin: 15px;
+    }
+    article {
+        display: inline-block;
+        width: 93.5%;
+        /* margin: 15px; */
+        max-width: none;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    footer a {
+        display: inline;
+        float: left;
+    }
+    footer .social{
+        display: inline;
+        float: right;
+
+    }
 }

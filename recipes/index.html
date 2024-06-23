@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script type="module" src="./blog.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="A Blog Site for Book Reviews">
+    <meta name="author" content="Matt Talbert">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Young+Serif&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/recipe-book.png" alt="icon of a recipe book"><h1 id="nav-bar-title">
+               RecipeBook
+            </h1>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button"><img src="images/search.svg" alt="search icon" id="search-icon"></button>
+            </div>
+        </nav>
+    </header>
+    <main id="maincontent">
+        <article>
+                <img src="images/apple-crisp.jpg" alt="An Apple Crisp with Ice Cream">
+                <p class="tag">dessert</p>
+                <a href="#"><h2>Apple Crisp</h2></a>
+                <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+                >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="description">
+                    This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
+                </p>
+        </article>
+    </main>
+
+
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>
