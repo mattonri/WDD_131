@@ -1,0 +1,10 @@
+:root {
+    --black: #1F1F1C;
+    --white: #E8EEF2;
+    --grey: #dddddd;
+
+    --text-dark: #1F1F1C;
+    --text-light: #E8EEF2;
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Open Sans', Helvetica, sans-serif;
+}
