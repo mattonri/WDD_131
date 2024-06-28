@@ -81,12 +81,13 @@ article img {
     width: 100%;
     /* height: auto; */
 }
-.tag {
+li {
     background-color: var(--grey);
     text-transform: uppercase;
     padding: 4px 8px;
     display: inline-block;
     border-radius: 4px;
+    margin: 5px;
 }
 footer {
     border-top: 1px solid var(--grey);
