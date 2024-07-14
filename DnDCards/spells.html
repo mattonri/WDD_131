@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Cards</title>
+    <script type="module" src="./spell_script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="A Blog Site for Book Reviews">
+    <meta name="author" content="Matt Talbert">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Young+Serif&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><h1 id="nav-bar-title">
+                    D&D Cards
+                </h1></li><li>
+                <a href="index.html">Home</a></li><li>
+                <a href="#">Spells</a></li><li>
+                <a href="#">Items</a></li><li>
+                <a href="#">About</a></li><li>
+            </ul>
+        </nav>
+    </header>
+    <!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="./images/spell-landscape-hero.jpg" alt="A landscape covered by the elemental consequences of arcane magic.">
+        </div>
+        <section id="hero-msg">
+            <h1 class="child-title">
+                D&D Spells
+            </h1>
+            <h3>
+                Search for D&D Spells Here!
+            </h3>
+    
+        </section>
+    </div>
+    <div id="filter-bar">
+        <input class="search-bar" type="text" placeholder="Search For A Spell Here...">
+        <div class="filter-group">
+            <label>
+                <input type="checkbox" name="filter" value="ritual"> Ritual Casting
+            </label>
+        </div>
+    </div>
+    <main id="maincontent">
+        <section id="spell-article-gallery">
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy;2024 Matthew Talbert</p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
